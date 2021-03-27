@@ -10,7 +10,7 @@ const connectDB = async () =>{
         }) 
         console.log(`shuchu:${conn.connection.host}`.cyan.underline);
     }catch(error){
-        console.log(`错误:${error.message}`.red.bold.underline);
+        console.log(`数据库错误:${error.message}`.red.bold.underline);
         process.exit(1)
 
     }
