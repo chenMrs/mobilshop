@@ -1,6 +1,5 @@
 const products =[
   {
-    id:'1',
     name:'苹果12 mini 64g',
     image: "/image/1.jfif",
     description:'苹果12 mini 64g很厉害',
@@ -12,7 +11,6 @@ const products =[
     numReviews:5,
   },
   {
-    id:'2',
     name:'苹果12 mini 64g',
     image: "/image/1.jfif",
     description:'苹果12 mini 64g很厉害',
@@ -24,7 +22,6 @@ const products =[
     numReviews:5,
   },
   {
-    id:'3',
     name:'苹果12 mini 64g',
     image: "/image/1.jfif",
     description:'苹果12 mini 64g很厉害',
@@ -36,7 +33,6 @@ const products =[
     numReviews:5,
   },
   {
-    id:'4',
     name:'苹果12 mini 64g',
     image: "/image/1.jfif",
     description:'苹果12 mini 64g很厉害',
@@ -48,7 +44,6 @@ const products =[
     numReviews:5,
   },
   {
-    id:'5',
     name:'苹果12 mini 64g',
     image: "/image/1.jfif",
     description:'苹果12 mini 64g很厉害',
@@ -60,7 +55,6 @@ const products =[
     numReviews:5,
   },
   {
-    id:'6',
     name:'苹果12 mini 64g',
     image: "/image/1.jfif",
     description:'苹果12 mini 64g很厉害',
@@ -72,7 +66,6 @@ const products =[
     numReviews:5,
   },
   {
-    id:'7',
     name:'苹果12 mini 64g',
     image: "/image/1.jfif",
     description:'苹果12 mini 64g很厉害',
@@ -84,7 +77,6 @@ const products =[
     numReviews:5,
   },
   {
-    id:'8',
     name:'苹果12 mini 64g',
     image: "/image/1.jfif",
     description:'苹果12 mini 64g很厉害',
@@ -96,7 +88,6 @@ const products =[
     numReviews:5,
   },
   {
-    id:'9',
     name:'苹果12 mini 64g',
     image: "/image/1.jfif",
     description:'苹果12 mini 64g很厉害',
@@ -108,7 +99,6 @@ const products =[
     numReviews:5,
   },
   {
-    id:'10',
     name:'苹果12 mini 64g',
     image: "/image/1.jfif",
     description:'苹果12 mini 64g很厉害',
@@ -121,4 +111,4 @@ const products =[
   },
 
 ]
-module.exports = products
+export default products

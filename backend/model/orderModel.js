@@ -1,0 +1,43 @@
+import mongoose from 'mongoose'
+
+const orderSchema = mongoose.Schema({
+    user :{
+        type:mongoose.Schema.Types.ObjectId,
+        require:true,
+        ref:'User'
+    },
+    orderItem:[{
+        name:{type:String,required:true},
+        qty:{type:Number,required:true},
+        image:{type:String,required:true},
+        price:{type:Number,required:true},
+        product:{type:mongoose.Schema.Types.ObjectId,required:true,ref:'Product'},
+    }],
+    shippingAddress:{
+        address:{type:String,required:true},
+        city:{type:String,required:true},
+        postalCode:{type:String,required:true},
+        province:{type:String,required:true},
+    },
+    paymentMethod:{
+        type:String,
+        require:true,
+    },
+    paymentResult:{
+        id:{type:String},
+        staus:{type:String},
+        updata_time:{type:String},
+        wechat_address:{type:String},
+    },
+    isDelivered:{type:Boolean,required:true,default:false},
+    deliveredAt:{type:Date},
+    shoppingPrice:{type:Number,required:true,default:0},
+    totalPrice:{type:Number,required:true,default:0},
+    isPaid:{type:Boolean,required:true,default:false},
+    paidAt:{type:Date}
+
+},{
+    timeStamps:true,
+})
+const Order =mongoose.model('Order',orderSchema)
+export default Order
